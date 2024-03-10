@@ -1,0 +1,24 @@
+﻿<Window x:Class="EF.oefening._03.oplossing.Dialoog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EF.oefening._03.oplossing"
+        mc:Ignorable="d"
+            Title="Product" Height="300" Width="440" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <RadioButton x:Name="RbBoek" GroupName="ProductType" Content="Boek" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,10,0,0" Click="RbBoek_Click" IsChecked="True" />
+        <RadioButton x:Name="RbSoftware" GroupName="ProductType" Content="Software" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,10,0,0" Click="RbSoftware_Click" />
+        <Label Content="ProductCode"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" />
+        <TextBox x:Name="TxtProductCode" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,50,0,0" Width="300" />
+        <Label Content="Beschrijving"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0" />
+        <TextBox x:Name="TxtBeschrijving" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,90,0,0" Width="300" />
+        <Label Content="Prijs"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130,0,0" />
+        <TextBox x:Name="TxtPrijs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,130,0,0" Width="300" />
+        <Label x:Name="LblVeld" Content="Auteur"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,170,0,0" />
+        <TextBox x:Name="TxtVeld" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,170,0,0" Width="300" />
+
+        <Button  x:Name="BtnBewaar" Content="Bewaar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="160,220,0,0" Height="30" Width="120" Click="BtnBewaar_Click" />
+        <Button  x:Name="BtnAnnuleer" Content="Annuleer" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="290,220,0,0" Height="30" Width="120" Click="BtnAnnuleer_Click" />
+    </Grid>
+</Window>
